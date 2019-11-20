@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Forma 1</title>
+    </head>
+
+    <body>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <div>
+                        <label for="nameInput">1. Name</label>
+                        <input id="nameInput" name="name" type="text" placeholder="First and last name"/>
+                    </div>
+
+                    <div>
+                        <label for="emailInput">2. Email</label>
+                        <input id="emailInput" name="email" type="email" placeholder="example@domain.com"/>
+                    </div>
+
+                    <div>
+                        <label for="telephoneInput">3. Phone</label>
+                        <input id="telephoneInput" name="telephone" type="tel" placeholder="Eg. +44750000"/>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Delivery address</legend>
+
+                    <div>
+                        <label for="addressInput">1. Address:</label>
+                        <textarea id="addressInput" name="address" rows="5" cols="50"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="postCodeInput">2. Post code</label>
+                        <input id="postCodeInput" name="postCodeInput" type="number"/>
+                    </div>
+
+                    <div>
+                        <label for="countryIput">3. Country</label>
+                        <select id="countryInput" name="country">
+                            <option selected disabled>Choose country</option>
+                            <option value="ME">Crna Gora</option>
+                            <option value="SR">Srbija</option>
+                            <option value="HR">Hrvatska</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Card details</legend>
+
+                    <div>
+                        <ol type="1">
+                            <li>
+                                <fieldset>
+                                    <legend>Card type</legend>
+
+                                    <div>
+                                        <ol type="1">
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="card"  value="VISA"> VISA
+                                                </label>
+                                            </li>
+
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="card"  value="AmEx"> American Express
+                                                </label>
+                                            </li>
+
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="card"  value="Master"> Mastercard
+                                                </label>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </fieldset>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <label for="cardNumInput">Card number</label>
+                                    <input id="cardNumInput" name="cardNumInput" type="number" max="16"/>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <label for="secCodeInput">Security code</label>
+                                    <input id="secCodeInput" name="secCodeInput" type="number" max="3"/>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <label for="nameCardInput">Name on card</label>
+                                    <input id="nameCardInput" name="name" type="text" placeholder="Exact name as on the card"/>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" value="Buy It!">
+                </fieldset>
+            </form>
+        </div>
+    </body>
